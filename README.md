@@ -1,4 +1,4 @@
-# My Linux Journey
+  # My Linux and Cloud Journey
 
 * Day 1: Learned git init, add, commit
 * Day 2: Learned branches and merge
