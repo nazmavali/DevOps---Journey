@@ -4,3 +4,4 @@
 * Day 2: Learned branches and merge
 * Day 3: Learned GitHub and git push
 
+- Day 4: Learned merge conflicts
