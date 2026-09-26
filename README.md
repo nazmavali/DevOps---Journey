@@ -1,6 +1,5 @@
-My DevOps Journey
-Day 1: I have learned git init, add, commit
- this is Nazma
-This line is only in test
-I am trying for my own
-Day 3: I learned GitHub
+# My DevOps Journey
+
+- Day 1: Learned git init, add, commit
+- Day 2: Learned branches and merge
+- Day 3: Learned GitHub and git push
