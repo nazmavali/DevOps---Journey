@@ -77,11 +77,22 @@ nazma@NazmaVali MINGW64 \~/DevOps-Journey (main)
 $
 
 
-- ping results:
+
+* ping results:
 
 &#x20; - Reply + small time + Lost 0 = working
 
 &#x20; - Request timed out = no answer. It might be down, or it might just block ping (like amazon.com)
 
 &#x20; - Near computers answer faster (my router: 4ms). Far ones are slower (google: 47ms)
+
+
+
+
+
+
+
+\- DNS: turns a website name into an IP address
+
+\- nslookup: asks DNS for a name's IP address
 
