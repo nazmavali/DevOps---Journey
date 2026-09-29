@@ -96,5 +96,10 @@ $
 
 \- nslookup: asks DNS for a name's IP address
 
-- tracert: shows every stop my message takes to reach a website. Stop 1 is my router, the last stop is the destination.
+* tracert: shows every stop my message takes to reach a website. Stop 1 is my router, the last stop is the destination.
+
+
+- port: a number that tells a computer which service a message is for. IP address finds the computer, port finds the service.
+* \- common ports: 22 = SSH (login), 80 = HTTP (website), 443 = HTTPS (secure website)
+* \- netstat -an: shows the ports my computer is using. LISTENING = door open, waiting. ESTABLISHED = talking right now.
 
