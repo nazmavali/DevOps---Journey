@@ -96,3 +96,5 @@ $
 
 \- nslookup: asks DNS for a name's IP address
 
+- tracert: shows every stop my message takes to reach a website. Stop 1 is my router, the last stop is the destination.
+
