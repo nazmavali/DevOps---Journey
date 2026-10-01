@@ -116,6 +116,8 @@ $
 
 \- Status codes: 200 = worked, 404 = wrong page, 500 = the website is broken
 
+
+
 ## Week 2 Summary: Networking basics
 
 \- ipconfig: my computer's address settings ("my ID card")
@@ -135,4 +137,18 @@ $
 \- Status codes: 200 = worked, 404 = wrong page, 500 = website is broken
 
 \- Typing google.com: DNS turns the name into an IP first, then it connects
+
+
+
+\## Subnets
+
+\- subnet: a smaller group of computers inside a bigger network ("one floor")
+
+\- /24 = 255.255.255.0: first 3 numbers are the floor, last number is the computer
+
+\- a /24 subnet holds 254 computers
+
+\- naming a floor: keep first 3 numbers, last becomes 0, add /24. Example: 10.0.0.61 -> 10.0.0.0/24
+
+\- my home Wi-Fi floor: 10.0.0.0/24. VirtualBox floor: 192.168.56.0/24
 
