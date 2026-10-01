@@ -116,3 +116,23 @@ $
 
 \- Status codes: 200 = worked, 404 = wrong page, 500 = the website is broken
 
+## Week 2 Summary: Networking basics
+
+\- ipconfig: my computer's address settings ("my ID card")
+
+\- ping: checks if another computer answers ("are you there?")
+
+\- nslookup: asks DNS for a name's IP address ("name to number")
+
+\- tracert: every stop my message takes to a website ("trace the route")
+
+\- netstat -an: ports my computer is using ("which doors are open")
+
+\- curl -I: top of a website's answer ("browser with only text")
+
+\- Ports: 22 = SSH (login), 80 = HTTP, 443 = HTTPS (S for Secure)
+
+\- Status codes: 200 = worked, 404 = wrong page, 500 = website is broken
+
+\- Typing google.com: DNS turns the name into an IP first, then it connects
+
