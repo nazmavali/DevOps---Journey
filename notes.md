@@ -99,7 +99,20 @@ $
 * tracert: shows every stop my message takes to reach a website. Stop 1 is my router, the last stop is the destination.
 
 
-- port: a number that tells a computer which service a message is for. IP address finds the computer, port finds the service.
+
+* port: a number that tells a computer which service a message is for. IP address finds the computer, port finds the service.
 * \- common ports: 22 = SSH (login), 80 = HTTP (website), 443 = HTTPS (secure website)
 * \- netstat -an: shows the ports my computer is using. LISTENING = door open, waiting. ESTABLISHED = talking right now.
+
+
+
+
+
+\- HTTP: the rules for a browser to ask a website for a page (request) and get an answer (response)
+
+\- HTTPS: same as HTTP but secure (S for Secure). Port 443. HTTP is port 80.
+
+\- curl -I: shows the top of a website's answer. Hook: "browser with only text"
+
+\- Status codes: 200 = worked, 404 = wrong page, 500 = the website is broken
 
