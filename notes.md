@@ -152,3 +152,9 @@ $
 
 \- my home Wi-Fi floor: 10.0.0.0/24. VirtualBox floor: 192.168.56.0/24
 
+- subnet size: small number after the slash = big floor. /16 = 65,534 computers, /24 = 254, /28 = 14
+
+\- VPC: my own private network in AWS (the building). Often a /16. Its subnets (floors) are often /24
+
+\- example: VPC 10.0.0.0/16 with subnets 10.0.1.0/24 and 10.0.2.0/24
+
