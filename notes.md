@@ -152,9 +152,19 @@ $
 
 \- my home Wi-Fi floor: 10.0.0.0/24. VirtualBox floor: 192.168.56.0/24
 
-- subnet size: small number after the slash = big floor. /16 = 65,534 computers, /24 = 254, /28 = 14
+* subnet size: small number after the slash = big floor. /16 = 65,534 computers, /24 = 254, /28 = 14
 
 \- VPC: my own private network in AWS (the building). Often a /16. Its subnets (floors) are often /24
 
 \- example: VPC 10.0.0.0/16 with subnets 10.0.1.0/24 and 10.0.2.0/24
+
+## Router and gateway
+
+\- router: the device that connects my home network to the internet
+
+\- gateway: the router's address saved in my laptop, where it sends everything leaving home
+
+\- my laptop: 10.0.0.61. my router/gateway: 10.0.0.1
+
+\- seen in ipconfig as "Default Gateway"
 
