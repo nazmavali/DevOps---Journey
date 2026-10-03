@@ -196,3 +196,17 @@ $
 
 \- fixed server-to-laptop ping by adding a firewall rule: allow ping in, only from 192.168.56.0/24
 
+**## Web server on my Ubuntu VM**
+
+\- "Address already in use" = two programs want the same port. One door, one service
+
+\- ss -tlnp | grep :80 shows which program owns port 80
+
+\- sudo systemctl stop apache2 / start nginx
+
+\- curl -I shows the Server: line, which says which program answered
+
+\- the receiver decides: the server's rules decide who gets in
+
+\- check the prompt: NazmaVali = laptop, ubuntu-server = server
+
