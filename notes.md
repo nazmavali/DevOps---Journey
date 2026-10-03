@@ -140,7 +140,7 @@ $
 
 
 
-\## Subnets
+# **## Subnets**
 
 \- subnet: a smaller group of computers inside a bigger network ("one floor")
 
@@ -167,4 +167,18 @@ $
 \- my laptop: 10.0.0.61. my router/gateway: 10.0.0.1
 
 \- seen in ipconfig as "Default Gateway"
+
+
+
+# **## Firewalls**
+
+\- firewall: a guard that allows some messages and blocks others, usually by port
+
+\- default: coming in is blocked, going out is allowed. Rules make exceptions
+
+\- web server needs 443 open (HTTPS). 80 for HTTP. 22 for login
+
+\- security group: the firewall for a server in AWS
+
+\- netsh advfirewall show currentprofile: shows my laptop's firewall (State ON)
 
