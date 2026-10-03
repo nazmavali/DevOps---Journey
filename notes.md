@@ -196,6 +196,8 @@ $
 
 \- fixed server-to-laptop ping by adding a firewall rule: allow ping in, only from 192.168.56.0/24
 
+
+
 **## Web server on my Ubuntu VM**
 
 \- "Address already in use" = two programs want the same port. One door, one service
@@ -209,4 +211,20 @@ $
 \- the receiver decides: the server's rules decide who gets in
 
 \- check the prompt: NazmaVali = laptop, ubuntu-server = server
+
+**## Firewall on my Ubuntu server (ufw)**
+
+\- sudo ufw status: is the guard on, and what are the rules
+
+\- allow SSH (22) BEFORE enabling, or I lock myself out
+
+\- sudo ufw allow 22/tcp, then sudo ufw enable
+
+\- firewall on + port not allowed = "Connection timed out" (message dropped)
+
+\- sudo ufw allow 80/tcp = opens the web port again
+
+\- timed out = firewall. refused = nothing listening
+
+\- same idea as an AWS security group
 
