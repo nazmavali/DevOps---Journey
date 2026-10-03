@@ -182,3 +182,17 @@ $
 
 \- netsh advfirewall show currentprofile: shows my laptop's firewall (State ON)
 
+**## Troubleshooting (real practice)**
+
+\- ladder: me (ipconfig / ip a), router (ping), internet (ping 8.8.8.8), name (nslookup), website (curl -I)
+
+\- "could not find host" = DNS problem. "Request timed out" = no answer (maybe a firewall)
+
+\- number works, name fails = DNS
+
+\- works one way, fails the other = firewall
+
+\- Windows: ipconfig, ping -n. Linux: ip a, ping -c
+
+\- fixed server-to-laptop ping by adding a firewall rule: allow ping in, only from 192.168.56.0/24
+
