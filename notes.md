@@ -212,6 +212,8 @@ $
 
 \- check the prompt: NazmaVali = laptop, ubuntu-server = server
 
+
+
 **## Firewall on my Ubuntu server (ufw)**
 
 \- sudo ufw status: is the guard on, and what are the rules
@@ -227,4 +229,20 @@ $
 \- timed out = firewall. refused = nothing listening
 
 \- same idea as an AWS security group
+
+**## Nginx**
+
+\- Nginx: a web server. A program that listens on port 80 and hands out web pages from a folder
+
+\- web page folder on Ubuntu: /var/www/html
+
+\- the page is just a file. Change the file, change the website
+
+\- always make a backup first: sudo cp file file.bak
+
+\- the Server: line in curl -I tells which program really answered (not the text on the page)
+
+
+
+
 
