@@ -230,6 +230,8 @@ $
 
 \- same idea as an AWS security group
 
+
+
 **## Nginx**
 
 \- Nginx: a web server. A program that listens on port 80 and hands out web pages from a folder
@@ -241,6 +243,8 @@ $
 \- always make a backup first: sudo cp file file.bak
 
 \- the Server: line in curl -I tells which program really answered (not the text on the page)
+
+
 
 **## Timed out vs refused**
 
@@ -255,4 +259,20 @@ $
 \- if SSH times out once, try again before digging deeper
 
 \- check the prompt: NazmaVali = laptop, ubuntu-server = server
+
+
+
+**## Load balancer (Nginx)**
+
+\- load balancer: one address in front, many servers behind. It shares visitors and skips a broken server
+
+\- upstream { server ...; server ...; } = the team list. proxy\_pass = pass the visitor to one of them
+
+\- sudo nginx -t = check the settings. sudo systemctl reload nginx = use them without stopping
+
+\- the default site on port 80 clashed with mine. rm only the sites-enabled link. ln -s puts it back
+
+\- /var/log/nginx/error.log = Nginx's diary. "Connection refused ... upstream" = it found the broken server
+
+\- AWS version: Application Load Balancer with health checks
 
