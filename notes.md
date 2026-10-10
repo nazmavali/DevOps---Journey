@@ -242,7 +242,17 @@ $
 
 \- the Server: line in curl -I tells which program really answered (not the text on the page)
 
+**## Timed out vs refused**
 
+\- timed out = silence. A firewall is probably dropping it. curl waits the whole time limit
 
+\- refused = a quick "no". Nothing is listening on that port (the service is stopped). curl gives up early
 
+\- timed out: check the firewall (sudo ufw status). Refused: check the service (systemctl status)
+
+\- the firewall blocks anything that no rule allows ("no rule, no entry"), secure port or not
+
+\- if SSH times out once, try again before digging deeper
+
+\- check the prompt: NazmaVali = laptop, ubuntu-server = server
 
