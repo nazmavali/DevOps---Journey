@@ -276,3 +276,23 @@ $
 
 \- AWS version: Application Load Balancer with health checks
 
+
+
+**## SSH**
+
+\- SSH = secure login to another computer. Port 22. The server must listen on 22 and the firewall must allow it
+
+\- first login: the fingerprint question. yes = my laptop remembers the server (known\_hosts)
+
+\- key pair: public key (.pub) = the lock, goes on the server. private key = the key, stays on my laptop, never share it
+
+\- ssh-keygen -t ed25519 -f \~/.ssh/name = make a key pair
+
+\- ssh-copy-id -i \~/.ssh/name.pub user@server = put the lock on the server
+
+\- ssh -i \~/.ssh/name user@server = log in with the key
+
+\- AWS uses a key pair (.pem file) instead of a password
+
+\- SSH timed out once: try again before digging deeper
+
